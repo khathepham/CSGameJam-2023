@@ -1,10 +1,12 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Consolas.ttf" type="DynamicFontData" id=1]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
 font_data = ExtResource( 1 )
+
+[sub_resource type="RectangleShape2D" id=2]
 
 [node name="Minigame Template" type="Node2D"]
 
@@ -16,6 +18,9 @@ margin_top = 50.0
 margin_right = 1870.0
 margin_bottom = 1030.0
 color = Color( 0.14902, 0.27451, 0.32549, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="ColorRect3" type="ColorRect" parent="Background"]
 margin_left = 50.0
@@ -23,6 +28,9 @@ margin_top = 100.0
 margin_right = 550.0
 margin_bottom = 980.0
 color = Color( 0.956863, 0.635294, 0.380392, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Label" type="Label" parent="Background/ColorRect3"]
 margin_left = 24.0
@@ -32,6 +40,9 @@ margin_bottom = 116.0
 custom_fonts/font = SubResource( 1 )
 text = "Instructions go here
 "
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="ColorRect2" type="ColorRect" parent="Background"]
 margin_left = 650.0
@@ -40,3 +51,13 @@ margin_right = 1820.0
 margin_bottom = 980.0
 rect_pivot_offset = Vector2( -1634, -268 )
 color = Color( 0.913725, 0.768627, 0.415686, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="BlockGame" type="Node" parent="."]
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="BlockGame"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BlockGame/KinematicBody2D"]
+shape = SubResource( 2 )
