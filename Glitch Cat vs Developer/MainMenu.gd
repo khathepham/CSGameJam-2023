@@ -1,7 +1,11 @@
 extends Node2D
 
 export var mainGameScene : PackedScene
-"script"
 
-func _on_Play_button_button_up():
-	get_tree().change_scene(mainGameScene.resource_path)
+
+func _on_Play_button_pressed():
+	get_tree().change_scene("res://final cut-scene.tscn")
+
+
+func _on_How_to_play_button_pressed():
+	get_tree().change_scene("res://Instructions.tscn")
