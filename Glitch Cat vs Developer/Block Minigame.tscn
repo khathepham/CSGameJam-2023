@@ -49,6 +49,10 @@ margin_bottom = 980.0
 rect_pivot_offset = Vector2( -1634, -268 )
 color = Color( 0.913725, 0.768627, 0.415686, 1 )
 
+[node name="Sprite" type="Sprite" parent="Background"]
+scale = Vector2( 1000, 100 )
+texture = ExtResource( 2 )
+
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
 position = Vector2( 1056, 460 )
 z_index = 5

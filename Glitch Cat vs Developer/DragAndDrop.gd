@@ -4,6 +4,7 @@ var can_grab = false
 var grabbed_offset = Vector2()
 
 func _input_event(viewport, event, shape_idx):
+	print("ran")
 	if event is InputEventMouseButton:
 		can_grab = event.pressed
 		grabbed_offset = position - get_global_mouse_position()
