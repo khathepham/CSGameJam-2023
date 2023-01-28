@@ -1,12 +1,14 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Consolas.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Keira's Assets/blocksTexture.png" type="Texture" id=2]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
 font_data = ExtResource( 1 )
 
 [sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 66.5, 369 )
 
 [node name="Minigame Template" type="Node2D"]
 
@@ -58,6 +60,15 @@ __meta__ = {
 [node name="BlockGame" type="Node" parent="."]
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="BlockGame"]
+position = Vector2( 1000, 550 )
+input_pickable = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BlockGame/KinematicBody2D"]
+position = Vector2( -0.5, -1 )
 shape = SubResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="BlockGame/KinematicBody2D"]
+modulate = Color( 0.905882, 0.435294, 0.317647, 1 )
+scale = Vector2( 100, 700 )
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 100, 100 )
