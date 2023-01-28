@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Consolas.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://blocksTexture.png" type="Texture" id=2]
+[ext_resource path="res://dragAndDrop.gd" type="Script" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -45,6 +46,8 @@ text = "Instructions go here
 
 [node name="CenterBlock" type="KinematicBody2D" parent="."]
 position = Vector2( 1277, 407 )
+input_pickable = true
+script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CenterBlock"]
 shape = SubResource( 2 )
