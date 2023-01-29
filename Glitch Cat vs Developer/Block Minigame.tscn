@@ -1,0 +1,80 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Consolas.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://blocksTexture.png" type="Texture" id=2]
+[ext_resource path="res://dragAndDrop.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+font_data = ExtResource( 1 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 50, 50 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 50, 50 )
+
+[node name="Minigame Template" type="Node2D"]
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="Background"]
+modulate = Color( 0.14902, 0.27451, 0.32549, 1 )
+position = Vector2( 600, 50 )
+scale = Vector2( 1270, 980 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="Sprite2" type="Sprite" parent="Background"]
+modulate = Color( 0.913725, 0.768627, 0.415686, 1 )
+position = Vector2( 650, 100 )
+scale = Vector2( 1170, 880 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="Sprite3" type="Sprite" parent="Background"]
+modulate = Color( 0.956863, 0.635294, 0.380392, 1 )
+position = Vector2( 50, 100 )
+scale = Vector2( 500, 880 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="Label" type="Label" parent="Background"]
+margin_left = 74.0
+margin_top = 131.0
+margin_right = 514.0
+margin_bottom = 216.0
+custom_fonts/font = SubResource( 1 )
+text = "Instructions go here
+"
+
+[node name="Blocks" type="Node2D" parent="."]
+
+[node name="CenterBlock" type="KinematicBody2D" parent="Blocks"]
+position = Vector2( 1208, 407 )
+input_pickable = true
+script = ExtResource( 3 )
+horizontal = null
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Blocks/CenterBlock"]
+position = Vector2( -1, 0 )
+shape = SubResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="Blocks/CenterBlock"]
+modulate = Color( 0.905882, 0.435294, 0.317647, 1 )
+scale = Vector2( 100, 100 )
+texture = ExtResource( 2 )
+
+[node name="CenterBlock2" type="KinematicBody2D" parent="Blocks"]
+position = Vector2( 1438, 688 )
+input_pickable = true
+script = ExtResource( 3 )
+horizontal = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Blocks/CenterBlock2"]
+shape = SubResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="Blocks/CenterBlock2"]
+modulate = Color( 0.905882, 0.435294, 0.317647, 1 )
+scale = Vector2( 100, 100 )
+texture = ExtResource( 2 )

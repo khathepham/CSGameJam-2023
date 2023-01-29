@@ -44,3 +44,7 @@ func _check_mouse_overlap():
 
 func _on_Block_area_entered(area):
 	area._stop_move()
+
+
+func _on_Win_Block_area_entered(area):
+	print("you win!")
