@@ -37,3 +37,19 @@ func _on_redZone6_mouse_entered():
 
 func _on_redZone7_mouse_entered():
 	_on_redZone_mouse_entered()
+
+
+func _on_redZone8_mouse_entered():
+	_on_redZone_mouse_entered()
+
+
+func _on_redZone9_mouse_entered():
+	_on_redZone_mouse_entered()
+
+
+func _on_redZone10_mouse_entered():
+	_on_redZone_mouse_entered()
+
+
+func _on_redZone11_mouse_entered():
+	_on_redZone_mouse_entered()
