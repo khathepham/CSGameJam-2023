@@ -27,7 +27,10 @@ func _process(delta):
 				x = position.x+speed
 			else:
 				x = position.x-speed
-			position.x = max(min(x, 1520-width), 640+width)
+			if main_block:
+				position.x = max(min(x, 1608), 640+width)
+			else:
+				position.x = max(min(x, 1520-width), 640+width)
 		else:
 			#var y = get_global_mouse_position().y + grabbed_offset.y
 			var height = self.get_node("Block_Hitbox").shape.extents.y
@@ -72,6 +75,13 @@ func _snap():
 				position.x = lower + 728
 			else:
 				position.x = upper + 728
+		else:
+			var upper = (int(position.x-816)/176)*176
+			var lower = upper+176
+			if abs(position.x - 816 - upper) > abs(position.x - 816 - lower):
+				position.x = lower+816
+			else:
+				position.x = upper+816
 	else:
 		var upper = (int(position.y-272)/176)*176
 		var lower = upper+176

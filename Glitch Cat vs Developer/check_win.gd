@@ -6,3 +6,9 @@ func _on_Block_area_entered(area):
 	
 func _stop_move():
 	return 
+
+func _snap():
+	pass
+	
+func _can_move():
+	pass
