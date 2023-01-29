@@ -1,16 +1,14 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Assets/win_screen.png" type="Texture" id=1]
 [ext_resource path="res://Block Minigame/blocksTexture.png" type="Texture" id=2]
 [ext_resource path="res://Block Minigame/Consolas.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://WinScreen.gd" type="Script" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 200
 font_data = ExtResource( 3 )
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource( 4 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
 margin_right = 1920.0
