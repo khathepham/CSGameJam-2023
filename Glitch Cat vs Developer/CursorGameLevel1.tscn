@@ -1,0 +1,191 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://mouse.gd" type="Script" id=1]
+[ext_resource path="res://redZoneCollisions.gd" type="Script" id=2]
+[ext_resource path="res://BlockMinigame/blocksTexture.png" type="Texture" id=3]
+[ext_resource path="res://Consolas.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+font_data = ExtResource( 4 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 551.438, 47 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 551, 55.75 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 559.25, 68.75 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 553.5, 69.75 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 562.5, 102 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 324.5, 542 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 44.75, 544 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 49.5, 79.5 )
+
+[node name="Minigame Template" type="Node2D"]
+
+[node name="Background" type="Node2D" parent="."]
+position = Vector2( 0, -4 )
+
+[node name="background" type="Sprite" parent="Background"]
+modulate = Color( 0.878431, 0.462745, 0.419608, 1 )
+position = Vector2( -216, 3 )
+scale = Vector2( 2254, 1086 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="dangerBG" type="Sprite" parent="Background"]
+modulate = Color( 0.909804, 0.184314, 0.184314, 1 )
+position = Vector2( 602, 46 )
+scale = Vector2( 1274, 984 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="safeBG" type="Sprite" parent="Background"]
+modulate = Color( 0.913725, 0.768627, 0.415686, 1 )
+position = Vector2( 654, 95 )
+scale = Vector2( 1170, 878 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="orangeBG" type="Sprite" parent="Background"]
+modulate = Color( 0.956863, 0.635294, 0.380392, 1 )
+position = Vector2( 50, 96 )
+scale = Vector2( 500, 876 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Label" type="Label" parent="Background"]
+margin_left = 71.0
+margin_top = 125.0
+margin_right = 531.0
+margin_bottom = 997.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Instructions:
+
+Move your mouse
+towards the green
+zone and don't hit
+the red zone!"
+
+[node name="dangerrBG2" type="Sprite" parent="Background"]
+modulate = Color( 0.909804, 0.184314, 0.184314, 1 )
+position = Vector2( 766, 180 )
+scale = Vector2( 1066, 112 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="dangerBG3" type="Sprite" parent="Background"]
+modulate = Color( 0.909804, 0.184314, 0.184314, 1 )
+position = Vector2( 654, 377 )
+scale = Vector2( 1066, 137 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="dangerBG4" type="Sprite" parent="Background"]
+modulate = Color( 0.909804, 0.184314, 0.184314, 1 )
+position = Vector2( 763, 618 )
+scale = Vector2( 1066, 141 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="dangerBG5" type="Sprite" parent="Background"]
+modulate = Color( 0.909804, 0.184314, 0.184314, 1 )
+position = Vector2( 653, 882 )
+scale = Vector2( 1070, 141 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="winBG6" type="Sprite" parent="Background"]
+modulate = Color( 0.498039, 0.956863, 0.352941, 1 )
+position = Vector2( 1723, 924 )
+scale = Vector2( 101, 160 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="safeBG2" type="Sprite" parent="Background"]
+modulate = Color( 0.913725, 0.768627, 0.415686, 1 )
+position = Vector2( 1702, 3 )
+scale = Vector2( 122, 99 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="redZoneCollisions" type="Node" parent="."]
+script = ExtResource( 2 )
+
+[node name="redZone" type="Area2D" parent="redZoneCollisions"]
+position = Vector2( -2, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="redZoneCollisions/redZone"]
+position = Vector2( 1152.56, 43 )
+shape = SubResource( 2 )
+
+[node name="redZone2" type="Area2D" parent="redZoneCollisions"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="redZoneCollisions/redZone2"]
+position = Vector2( 1320, 234 )
+shape = SubResource( 3 )
+
+[node name="redZone3" type="Area2D" parent="redZoneCollisions"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="redZoneCollisions/redZone3"]
+position = Vector2( 1159.75, 439.75 )
+shape = SubResource( 4 )
+
+[node name="redZone4" type="Area2D" parent="redZoneCollisions"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="redZoneCollisions/redZone4"]
+position = Vector2( 1317.5, 686.25 )
+shape = SubResource( 5 )
+
+[node name="redZone5" type="Area2D" parent="redZoneCollisions"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="redZoneCollisions/redZone5"]
+position = Vector2( 1162.5, 981 )
+shape = SubResource( 6 )
+
+[node name="redZone6" type="Area2D" parent="redZoneCollisions"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="redZoneCollisions/redZone6"]
+position = Vector2( 328, 539 )
+shape = SubResource( 7 )
+
+[node name="redZone7" type="Area2D" parent="redZoneCollisions"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="redZoneCollisions/redZone7"]
+position = Vector2( 1870.25, 539 )
+shape = SubResource( 8 )
+
+[node name="greenZoneCollisions" type="Node" parent="."]
+
+[node name="greenZone" type="Area2D" parent="greenZoneCollisions"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="greenZoneCollisions/greenZone"]
+position = Vector2( 1774.5, 1003.5 )
+shape = SubResource( 9 )
+
+[node name="mouse" type="Node" parent="."]
+script = ExtResource( 1 )
+
+[connection signal="mouse_entered" from="redZoneCollisions/redZone" to="redZoneCollisions" method="_on_redZone_mouse_entered"]
+[connection signal="mouse_entered" from="redZoneCollisions/redZone2" to="redZoneCollisions" method="_on_redZone2_mouse_entered"]
+[connection signal="mouse_entered" from="redZoneCollisions/redZone3" to="redZoneCollisions" method="_on_redZone3_mouse_entered"]
+[connection signal="mouse_entered" from="redZoneCollisions/redZone4" to="redZoneCollisions" method="_on_redZone4_mouse_entered"]
+[connection signal="mouse_entered" from="redZoneCollisions/redZone5" to="redZoneCollisions" method="_on_redZone5_mouse_entered"]
+[connection signal="mouse_entered" from="redZoneCollisions/redZone6" to="redZoneCollisions" method="_on_redZone6_mouse_entered"]
+[connection signal="mouse_entered" from="redZoneCollisions/redZone7" to="redZoneCollisions" method="_on_redZone7_mouse_entered"]
+[connection signal="mouse_entered" from="greenZoneCollisions/greenZone" to="mouse" method="_on_greenZone_mouse_entered"]
