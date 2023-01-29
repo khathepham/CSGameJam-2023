@@ -11,7 +11,7 @@ func _ready():
 func _on_redZone_mouse_entered():
 	yield(get_tree().create_timer(0.5), "timeout") #delays next scene
 	
-	get_tree().change_scene("res://CursorGameOver.tscn")
+	get_tree().change_scene("res://LoseScreen.tscn")
 
 
 #the rest is the same collision but in different areas...

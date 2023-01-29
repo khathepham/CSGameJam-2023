@@ -9,7 +9,7 @@ func _ready():
 func _on_greenZone_mouse_entered():
 	yield(get_tree().create_timer(0.5), "timeout") #delays next scene
 	
-	get_tree().change_scene("res://CursorGameLevel2.tscn")
+	get_tree().change_scene("res://WinScreen.tscn")
 
 
 # goes to the first level when the mouse hovers try again zone
