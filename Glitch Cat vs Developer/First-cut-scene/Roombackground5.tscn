@@ -7,33 +7,27 @@
 [ext_resource path="res://First-cut-scene/Scripts/first-cut-scene-script/Label.gd" type="Script" id=5]
 
 [node name="TextureRect" type="TextureRect"]
-margin_left = 4.0
-margin_top = 8.0
-margin_right = 1026.0
-margin_bottom = 644.0
+margin_right = 1920.0
+margin_bottom = 1165.0
 texture = ExtResource( 1 )
 stretch_mode = 1
 
 [node name="Hardworking owner" parent="." instance=ExtResource( 3 )]
-margin_left = -102.0
-margin_top = 175.0
-margin_right = 510.0
-margin_bottom = 583.0
 
 [node name="Boba the cat" parent="." instance=ExtResource( 2 )]
-margin_left = 688.0
-margin_top = 418.0
-margin_right = 822.0
-margin_bottom = 549.0
+margin_left = 422.0
+margin_top = 574.0
+margin_right = 556.0
+margin_bottom = 705.0
 
 [node name="Timer5" type="Timer" parent="."]
 script = ExtResource( 4 )
 
 [node name="Label" type="Label" parent="."]
-margin_left = 553.0
-margin_top = 306.0
-margin_right = 713.0
-margin_bottom = 337.0
+margin_left = 300.0
+margin_top = 481.0
+margin_right = 460.0
+margin_bottom = 512.0
 rect_scale = Vector2( 2.55999, 3.6 )
 text = "Meowwww 
 (Not this time!)"

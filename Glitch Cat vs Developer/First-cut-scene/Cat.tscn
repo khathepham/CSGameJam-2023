@@ -7,4 +7,5 @@ margin_left = 807.0
 margin_top = 425.0
 margin_right = 941.0
 margin_bottom = 556.0
+rect_scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 1 )

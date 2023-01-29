@@ -6,32 +6,26 @@
 [ext_resource path="res://First-cut-scene/Cat.tscn" type="PackedScene" id=5]
 
 [node name="TextureRect" type="TextureRect"]
-margin_left = 4.0
-margin_top = 8.0
-margin_right = 1026.0
-margin_bottom = 644.0
+margin_right = 1920.0
+margin_bottom = 1165.0
 texture = ExtResource( 3 )
 stretch_mode = 1
 
 [node name="Hardworking owner" parent="." instance=ExtResource( 4 )]
-margin_left = -102.0
-margin_top = 175.0
-margin_right = 510.0
-margin_bottom = 583.0
 
 [node name="Boba the cat" parent="." instance=ExtResource( 5 )]
-margin_left = 290.0
-margin_top = 189.0
-margin_right = 424.0
-margin_bottom = 320.0
+margin_left = 361.0
+margin_top = 571.0
+margin_right = 495.0
+margin_bottom = 702.0
 
 [node name="Timer6" type="Timer" parent="."]
 
 [node name="Label" type="Label" parent="."]
-margin_left = 114.0
-margin_top = 20.0
-margin_right = 274.0
-margin_bottom = 68.0
+margin_left = 254.0
+margin_top = 410.0
+margin_right = 414.0
+margin_bottom = 458.0
 rect_scale = Vector2( 2.55999, 3.6 )
 text = "Meowwww 
 (I will show you what Boba can do!)"
