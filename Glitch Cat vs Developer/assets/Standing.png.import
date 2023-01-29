@@ -2,11 +2,16 @@
 
 importer="texture"
 type="StreamTexture"
-valid=false
+path="res://.import/Standing.png-4123f12a44abbdc50f860f0bc72ad05a.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-source_file="res://assets/Standing cat.png"
+source_file="res://assets/Standing.png"
+dest_files=[ "res://.import/Standing.png-4123f12a44abbdc50f860f0bc72ad05a.stex" ]
+
 [params]
 
 compress/mode=0

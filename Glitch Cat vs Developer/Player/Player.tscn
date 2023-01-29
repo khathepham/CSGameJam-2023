@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
-[ext_resource path="res://assets/Standing cat.png" type="Texture" id=2]
+[ext_resource path="res://assets/Standing.png" type="Texture" id=2]
 [ext_resource path="res://assets/Sitting up.png" type="Texture" id=3]
 [ext_resource path="res://assets/Sitting left.png" type="Texture" id=4]
 [ext_resource path="res://assets/walk 1 right.png" type="Texture" id=5]
@@ -40,11 +40,11 @@ animations = [ {
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
-radius = 62.665
-height = 886.668
+radius = 23.333
+height = 181.337
 
 [node name="Player" type="KinematicBody2D"]
-scale = Vector2( 2, 2 )
+scale = Vector2( 0.6, 0.6 )
 collision_layer = 3
 collision_mask = 3
 script = ExtResource( 1 )
@@ -58,12 +58,11 @@ zoom = Vector2( 3, 3 )
 smoothing_enabled = true
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-scale = Vector2( 4, 4 )
 frames = SubResource( 1 )
 animation = "idle"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 23.3333, 446.667 )
+position = Vector2( 1.66666, 80 )
 rotation = 1.5708
 shape = SubResource( 2 )
