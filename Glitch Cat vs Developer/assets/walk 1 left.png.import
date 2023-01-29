@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/walk 1 left.png-54097a4a8c9d1d2b267097d32fc67b46.stex"
+path="res://.import/walk 1 left.png-1ae50c7d552d65527511d9d8d82921fb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/walk 1 left.png"
-dest_files=[ "res://.import/walk 1 left.png-54097a4a8c9d1d2b267097d32fc67b46.stex" ]
+source_file="res://assets/walk 1 left.png"
+dest_files=[ "res://.import/walk 1 left.png-1ae50c7d552d65527511d9d8d82921fb.stex" ]
 
 [params]
 

@@ -1,9 +1,8 @@
 extends KinematicBody2D
-signal hit
 
 
 # Declare member variables here. Examples:
-export var speed = 800 # How fast the player will move (pixels/sec).
+export var speed = 1200 # How fast the player will move (pixels/sec).
 var screen_size # Size of the game window.
 onready var _animated_sprite = $AnimatedSprite
 
