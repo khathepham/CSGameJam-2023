@@ -2,7 +2,7 @@
 
 [ext_resource path="res://mouse.gd" type="Script" id=1]
 [ext_resource path="res://redZoneCollisions.gd" type="Script" id=2]
-[ext_resource path="res://Block Minigame/blocksTexture.png" type="Texture" id=3]
+[ext_resource path="res://BlockMinigame/blocksTexture.png" type="Texture" id=3]
 [ext_resource path="res://Consolas.ttf" type="DynamicFontData" id=4]
 
 [sub_resource type="DynamicFont" id=1]
