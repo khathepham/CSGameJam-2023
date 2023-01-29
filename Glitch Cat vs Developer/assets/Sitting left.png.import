@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sitting left.png-4f7a011007496e74923be36577c8839e.stex"
+path="res://.import/Sitting left.png-189afb85cb6aa3f0c4c2ba02dba5ca91.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sitting left.png"
-dest_files=[ "res://.import/Sitting left.png-4f7a011007496e74923be36577c8839e.stex" ]
+source_file="res://Assets/Sitting left.png"
+dest_files=[ "res://.import/Sitting left.png-189afb85cb6aa3f0c4c2ba02dba5ca91.stex" ]
 
 [params]
 
