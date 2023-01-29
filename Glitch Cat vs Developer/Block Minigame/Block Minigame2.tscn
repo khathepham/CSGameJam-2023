@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Block Minigame/blocksTexture.png" type="Texture" id=1]
 [ext_resource path="res://Block Minigame/Consolas.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Block Minigame/check_win.gd" type="Script" id=3]
 [ext_resource path="res://Block Minigame/Block.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Block Minigame/tileset.ground.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -21,6 +22,14 @@ extents = Vector2( 174, 86 )
 [node name="Minigame Template" type="Node2D"]
 
 [node name="Background" type="Node2D" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="Background"]
+margin_right = 1920.0
+margin_bottom = 1280.0
+mouse_filter = 2
+input_pass_on_modal_close_click = false
+texture = ExtResource( 5 )
+stretch_mode = 2
 
 [node name="Sprite" type="Sprite" parent="Background"]
 modulate = Color( 0.14902, 0.27451, 0.32549, 1 )
@@ -49,8 +58,10 @@ margin_top = 131.0
 margin_right = 514.0
 margin_bottom = 216.0
 custom_fonts/font = SubResource( 1 )
-text = "Instructions go here
-"
+text = "How to Play:
+
+Remove the red chip from the board by sliding the other pieces out of the way"
+autowrap = true
 
 [node name="Sprite4" type="Sprite" parent="Background"]
 modulate = Color( 0.913725, 0.768627, 0.415686, 1 )
