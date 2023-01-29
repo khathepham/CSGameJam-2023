@@ -3,6 +3,7 @@ extends Area2D
 var can_grab = false
 var is_dragging = false;
 var grabbed_offset = Vector2()
+var speed = 5
 export var horizontal = true
 export var main_block = false
 
@@ -21,14 +22,24 @@ func _input_event(viewport, event, shape_idx):
 
 func _process(delta):
 	if Input.is_mouse_button_pressed(BUTTON_LEFT) and can_grab:
+		var mouseX = get_global_mouse_position().x
+		var mouseY = get_global_mouse_position().y
 		if horizontal:
-			var x = get_global_mouse_position().x + grabbed_offset.x
-			var width = self.get_node("Block_Hitbox").shape.extents.x
-			position.x = max(min(x, 1820-width), 650+width)
+			#var x = get_global_mouse_position().x + grabbed_offset.x
+			#var width = self.get_node("Block_Hitbox").shape.extents.x
+			#position.x = max(min(x, 1820-width), 650+width)
+			if mouseX > position.x:
+				position.x += speed
+			else:
+				position.x -= speed
 		else:
-			var y = get_global_mouse_position().y + grabbed_offset.y
-			var height = self.get_node("Block_Hitbox").shape.extents.y
-			position.y = max(min(y, 980-height), 100+height)
+			#var y = get_global_mouse_position().y + grabbed_offset.y
+			#var height = self.get_node("Block_Hitbox").shape.extents.y
+			#position.y = max(min(y, 980-height), 100+height)
+			if mouseY > position.y:
+				position.y += speed
+			else:
+				position.y -= speed
 	if (!Input.is_mouse_button_pressed(BUTTON_LEFT)):
 		can_grab = false
 			
