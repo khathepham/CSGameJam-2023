@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://First-cut-scene/Scripts/first-cut-scene-script/Label.gd" type="Script" id=1]
+[ext_resource path="res://First-cut-scene/Scripts/first-cut-scene-script/Timer6.gd" type="Script" id=2]
 [ext_resource path="res://assets/cut-scene-assets/empty-living-room-interior-flat-260nw-1444718618.jpg" type="Texture" id=3]
 [ext_resource path="res://First-cut-scene/Hardworking owner.tscn" type="PackedScene" id=4]
 [ext_resource path="res://First-cut-scene/Cat.tscn" type="PackedScene" id=5]
@@ -26,6 +27,7 @@ margin_right = 424.0
 margin_bottom = 320.0
 
 [node name="Timer6" type="Timer" parent="."]
+script = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="."]
 margin_left = 114.0
