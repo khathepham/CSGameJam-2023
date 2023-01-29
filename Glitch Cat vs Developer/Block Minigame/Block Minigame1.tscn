@@ -3,7 +3,7 @@
 [ext_resource path="res://Block Minigame/Block.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Block Minigame/Consolas.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Block Minigame/blocksTexture.png" type="Texture" id=3]
-[ext_resource path="res://Block Minigame/check_win.gd" type="Script" id=4]
+[ext_resource path="res://Block Minigame/Win Block.gd" type="Script" id=4]
 [ext_resource path="res://Block Minigame/tileset.ground.png" type="Texture" id=5]
 [ext_resource path="res://Block Minigame/Countdown.gd" type="Script" id=6]
 [ext_resource path="res://Consolas.ttf" type="DynamicFontData" id=7]
@@ -213,6 +213,7 @@ custom_fonts/mono_font = SubResource( 5 )
 custom_fonts/normal_font = SubResource( 6 )
 text = "1"
 
+[connection signal="area_entered" from="Win Block" to="Win Block" method="_on_Win_Block_area_entered"]
 [connection signal="area_entered" from="Win Block" to="Level1/MainBlock" method="_on_Win_Block_area_entered"]
 [connection signal="timeout" from="Countdown/Timer" to="Countdown" method="_on_Timer_timeout"]
 
