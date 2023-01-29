@@ -4,24 +4,29 @@ var can_grab = false
 var is_dragging = false;
 var grabbed_offset = Vector2()
 export var horizontal = true
+export var main_block = false
 
 func _input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton:
 		if event.pressed && _check_mouse_overlap():
 			can_grab = true
-			if horizontal:
-				grabbed_offset = position.x - get_global_mouse_position().x
-			else:
-				grabbed_offset = position.y - get_global_mouse_position().y
+			grabbed_offset.x = position.x - get_global_mouse_position().x
+			grabbed_offset.y = position.y - get_global_mouse_position().y
+			
+			if main_block:
+				if abs(grabbed_offset.x) > abs(grabbed_offset.y):
+					horizontal = true
+				else:
+					horizontal = false
 
 func _process(delta):
 	if Input.is_mouse_button_pressed(BUTTON_LEFT) and can_grab:
 		if horizontal:
-			var x = get_global_mouse_position().x + grabbed_offset
+			var x = get_global_mouse_position().x + grabbed_offset.x
 			var width = self.get_node("Block_Hitbox").shape.extents.x
 			position.x = max(min(x, 1820-width), 650+width)
 		else:
-			var y = get_global_mouse_position().y + grabbed_offset
+			var y = get_global_mouse_position().y + grabbed_offset.y
 			var height = self.get_node("Block_Hitbox").shape.extents.y
 			position.y = max(min(y, 980-height), 100+height)
 	if (!Input.is_mouse_button_pressed(BUTTON_LEFT)):
