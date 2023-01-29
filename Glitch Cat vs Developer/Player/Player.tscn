@@ -40,11 +40,12 @@ animations = [ {
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
-radius = 17.0
-height = 60.0
+radius = 62.665
+height = 886.668
 
 [node name="Player" type="KinematicBody2D"]
-scale = Vector2( 2, 2 )
+position = Vector2( -1, 33 )
+scale = Vector2( 0.4, 0.4 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
@@ -62,6 +63,6 @@ animation = "idle"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 4, 54 )
+position = Vector2( 23.3333, 446.667 )
 rotation = 1.5708
 shape = SubResource( 2 )
