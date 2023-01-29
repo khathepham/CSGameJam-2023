@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Glitched Out (Official).mp3-26c7c860d831cf5a1219a2a66285192c.mp3str"
+
+[deps]
+
+source_file="res://Glitched Out (Official).mp3"
+dest_files=[ "res://.import/Glitched Out (Official).mp3-26c7c860d831cf5a1219a2a66285192c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
