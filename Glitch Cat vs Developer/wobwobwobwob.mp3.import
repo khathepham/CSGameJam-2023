@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/wobwobwobwob.mp3-44b38327397700b0af170008bb08d2af.mp3str"
+
+[deps]
+
+source_file="res://wobwobwobwob.mp3"
+dest_files=[ "res://.import/wobwobwobwob.mp3-44b38327397700b0af170008bb08d2af.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
