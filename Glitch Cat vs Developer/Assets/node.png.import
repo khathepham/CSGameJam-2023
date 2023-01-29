@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/catnip.png-0c71c771ce90a45d09d74968f03ff444.stex"
+path="res://.import/node.png-5f102f436301bb867fad3b6f3ec8ecc3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/catnip.png"
-dest_files=[ "res://.import/catnip.png-0c71c771ce90a45d09d74968f03ff444.stex" ]
+source_file="res://Assets/node.png"
+dest_files=[ "res://.import/node.png-5f102f436301bb867fad3b6f3ec8ecc3.stex" ]
 
 [params]
 

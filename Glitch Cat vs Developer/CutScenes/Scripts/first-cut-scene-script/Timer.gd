@@ -20,5 +20,5 @@ func _ready():
 
 
 func _on_Timer_timeout():
-	get_tree().change_scene("res://First-cut-scene/Roombackground2.tscn")
+	get_tree().change_scene("res://CutScenes/Roombackground2.tscn")
 

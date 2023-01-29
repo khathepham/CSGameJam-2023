@@ -23,7 +23,7 @@ func _on_mouse_exited():
 	get_node("MarginContainer/VBoxContainer/VBoxContainer/Play button").grab_focus()
 
 func _on_Play_button_pressed():
-	get_tree().change_scene("res://First-cut-scene/Roombackground.tscn")
+	get_tree().change_scene("res://CutScenes/Roombackground.tscn")
 
 func _on_How_to_play_button_pressed():
 	get_tree().change_scene("res://Instructions.tscn")
