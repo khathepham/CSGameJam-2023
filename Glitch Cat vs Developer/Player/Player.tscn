@@ -43,7 +43,7 @@ animations = [ {
 radius = 17.0
 height = 60.0
 
-[node name="Player" type="Area2D"]
+[node name="Player" type="KinematicBody2D"]
 scale = Vector2( 2, 2 )
 script = ExtResource( 1 )
 __meta__ = {
@@ -65,5 +65,3 @@ playing = true
 position = Vector2( 4, 54 )
 rotation = 1.5708
 shape = SubResource( 2 )
-
-[connection signal="body_entered" from="." to="." method="_on_Cat_body_entered"]
