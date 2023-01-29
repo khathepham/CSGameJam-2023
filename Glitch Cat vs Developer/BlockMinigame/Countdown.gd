@@ -18,5 +18,5 @@ func _on_Timer_timeout():
 	self.get_node("sec").text = str(count_value)
 	if count_value <= 0:
 		yield(get_tree().create_timer(0.5), "timeout")
-		get_tree().change_scene("res://Map.tscn")
+		get_tree().change_scene("res://LoseScreen.tscn")
 	

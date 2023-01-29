@@ -7,14 +7,14 @@ var speed = 5
 export var horizontal = true
 export var main_block = false
 
-func _input_event(viewport, event, shape_idx):
+func _input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton:
 		if event.pressed && _check_mouse_overlap():
 			can_grab = true
 			grabbed_offset.x = position.x - get_global_mouse_position().x
 			grabbed_offset.y = position.y - get_global_mouse_position().y
 
-func _process(delta):
+func _process(_delta):
 	if Input.is_mouse_button_pressed(BUTTON_LEFT) and can_grab:
 		var mouseX = get_global_mouse_position().x
 		var mouseY = get_global_mouse_position().y
@@ -95,7 +95,7 @@ func _on_Block_area_entered(area):
 	area._snap()
 
 
-func _on_Win_Block_area_entered(area):
+func _on_Win_Block_area_entered(_area):
 	print("you win!")
 
 

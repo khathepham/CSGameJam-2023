@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Standing cat.png-1fdb0e55262d3b29993a102d5993c518.stex"
+path="res://.import/Standing cat.png-1479516305be6bb0396dd01212be9349.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Standing cat.png"
-dest_files=[ "res://.import/Standing cat.png-1fdb0e55262d3b29993a102d5993c518.stex" ]
+source_file="res://Assets/Standing cat.png"
+dest_files=[ "res://.import/Standing cat.png-1479516305be6bb0396dd01212be9349.stex" ]
 
 [params]
 
