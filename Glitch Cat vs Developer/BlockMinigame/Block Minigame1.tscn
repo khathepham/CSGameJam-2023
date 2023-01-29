@@ -213,6 +213,7 @@ custom_fonts/mono_font = SubResource( 5 )
 custom_fonts/normal_font = SubResource( 6 )
 text = "1"
 
+[connection signal="area_entered" from="Win Block" to="Win Block" method="_on_Win_Block_area_entered"]
 [connection signal="area_entered" from="Win Block" to="Level1/MainBlock" method="_on_Win_Block_area_entered"]
 [connection signal="timeout" from="Countdown/Timer" to="Countdown" method="_on_Timer_timeout"]
 
