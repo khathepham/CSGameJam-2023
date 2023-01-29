@@ -1,9 +1,10 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://mouse.gd" type="Script" id=1]
 [ext_resource path="res://redZoneCollisions.gd" type="Script" id=2]
 [ext_resource path="res://blocksTexture.png" type="Texture" id=3]
 [ext_resource path="res://Consolas.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://tileset.ground.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -19,7 +20,7 @@ extents = Vector2( 551, 55.75 )
 extents = Vector2( 559.25, 68.75 )
 
 [sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 553.5, 69.75 )
+extents = Vector2( 531, 69.75 )
 
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 562.5, 102 )
@@ -38,7 +39,16 @@ extents = Vector2( 49.5, 79.5 )
 [node name="Background" type="Node2D" parent="."]
 position = Vector2( 0, -4 )
 
+[node name="TextureRect" type="TextureRect" parent="Background"]
+margin_right = 2039.0
+margin_bottom = 1280.0
+mouse_filter = 2
+input_pass_on_modal_close_click = false
+texture = ExtResource( 5 )
+stretch_mode = 2
+
 [node name="background" type="Sprite" parent="Background"]
+visible = false
 modulate = Color( 0.878431, 0.462745, 0.419608, 1 )
 position = Vector2( -216, 3 )
 scale = Vector2( 2254, 1086 )
@@ -149,7 +159,7 @@ shape = SubResource( 4 )
 [node name="redZone4" type="Area2D" parent="redZoneCollisions"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="redZoneCollisions/redZone4"]
-position = Vector2( 1317.5, 686.25 )
+position = Vector2( 1295, 686.25 )
 shape = SubResource( 5 )
 
 [node name="redZone5" type="Area2D" parent="redZoneCollisions"]

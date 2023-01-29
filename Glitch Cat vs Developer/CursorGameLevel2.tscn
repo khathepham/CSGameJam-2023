@@ -1,9 +1,10 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://blocksTexture.png" type="Texture" id=1]
 [ext_resource path="res://redZoneCollisions.gd" type="Script" id=2]
 [ext_resource path="res://Consolas.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://mouse.gd" type="Script" id=4]
+[ext_resource path="res://tileset.ground.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -22,7 +23,7 @@ extents = Vector2( 237.625, 67.875 )
 extents = Vector2( 511.25, 69.875 )
 
 [sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 523.5, 61.5 )
+extents = Vector2( 589, 61.5 )
 
 [sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 324.5, 542 )
@@ -56,6 +57,14 @@ position = Vector2( -216, 3 )
 scale = Vector2( 2254, 1086 )
 texture = ExtResource( 1 )
 centered = false
+
+[node name="TextureRect" type="TextureRect" parent="Background"]
+margin_right = 2039.0
+margin_bottom = 1280.0
+mouse_filter = 2
+input_pass_on_modal_close_click = false
+texture = ExtResource( 5 )
+stretch_mode = 2
 
 [node name="dangerBG" type="Sprite" parent="Background"]
 modulate = Color( 0.909804, 0.184314, 0.184314, 1 )
@@ -124,14 +133,14 @@ centered = false
 
 [node name="winBG6" type="Sprite" parent="Background"]
 modulate = Color( 0.498039, 0.956863, 0.352941, 1 )
-position = Vector2( 1699, 973 )
+position = Vector2( 755, -18.9999 )
 scale = Vector2( 125, 118 )
 texture = ExtResource( 1 )
 centered = false
 
 [node name="safeBG2" type="Sprite" parent="Background"]
 modulate = Color( 0.913725, 0.768627, 0.415686, 1 )
-position = Vector2( 761, 3 )
+position = Vector2( 1703, 936 )
 scale = Vector2( 122, 94 )
 texture = ExtResource( 1 )
 centered = false
@@ -181,7 +190,7 @@ shape = SubResource( 5 )
 [node name="redZone5" type="Area2D" parent="redZoneCollisions"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="redZoneCollisions/redZone5"]
-position = Vector2( 1174.5, 1029.5 )
+position = Vector2( 1240, 1029.5 )
 shape = SubResource( 6 )
 
 [node name="redZone6" type="Area2D" parent="redZoneCollisions"]
@@ -225,7 +234,7 @@ shape = SubResource( 12 )
 [node name="greenZone2" type="Area2D" parent="greenZoneCollisions"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="greenZoneCollisions/greenZone2"]
-position = Vector2( 1761.25, 1028.75 )
+position = Vector2( 819, 38 )
 shape = SubResource( 13 )
 
 [node name="mouse" type="Node" parent="."]
