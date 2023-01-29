@@ -15,7 +15,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
-BgMusic="*res://bg_music.tscn"
+BgMusic="res://MainMenuMusic.tscn"
 
 [gui]
 
