@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sitting down.png-17471f38b70afc27988412c404948374.stex"
+path="res://.import/Sitting down.png-b19abd0d72ea80ea4ed8628b54860432.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sitting down.png"
-dest_files=[ "res://.import/Sitting down.png-17471f38b70afc27988412c404948374.stex" ]
+source_file="res://Assets/Sitting down.png"
+dest_files=[ "res://.import/Sitting down.png-b19abd0d72ea80ea4ed8628b54860432.stex" ]
 
 [params]
 
