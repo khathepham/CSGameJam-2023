@@ -1,6 +1,6 @@
 extends Node2D
 
-export var count_value = 30
+export var count_value = 5
 
 
 # Called when the node enters the scene tree for the first time.
