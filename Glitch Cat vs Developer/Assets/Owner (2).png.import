@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cat-removebg-preview.png-685e3cd9ba4f4415f3a79391213ea6ac.stex"
+path="res://.import/Owner (2).png-9118246f86d733d9ec0969c2e5e0597c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://cat-removebg-preview.png"
-dest_files=[ "res://.import/cat-removebg-preview.png-685e3cd9ba4f4415f3a79391213ea6ac.stex" ]
+source_file="res://Assets/Owner (2).png"
+dest_files=[ "res://.import/Owner (2).png-9118246f86d733d9ec0969c2e5e0597c.stex" ]
 
 [params]
 

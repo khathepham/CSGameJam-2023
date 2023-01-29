@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/empty-living-room-interior-flat-260nw-1444718618.jpg-53758e536eb9dce9ff319bafbabe8e59.stex"
+path="res://.import/empty-living-room-interior-flat-260nw-1444718618.jpg-d4ce52a34351e56759e7719ff1e9609a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://empty-living-room-interior-flat-260nw-1444718618.jpg"
-dest_files=[ "res://.import/empty-living-room-interior-flat-260nw-1444718618.jpg-53758e536eb9dce9ff319bafbabe8e59.stex" ]
+source_file="res://Assets/empty-living-room-interior-flat-260nw-1444718618.jpg"
+dest_files=[ "res://.import/empty-living-room-interior-flat-260nw-1444718618.jpg-d4ce52a34351e56759e7719ff1e9609a.stex" ]
 
 [params]
 
