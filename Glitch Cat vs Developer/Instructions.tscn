@@ -57,22 +57,22 @@ size_flags_vertical = 3
 alignment = 1
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
-margin_top = 159.0
+margin_top = 6.0
 margin_right = 1024.0
-margin_bottom = 360.0
+margin_bottom = 513.0
 custom_fonts/font = SubResource( 1 )
 text = "Game Instructions
-There is a cat (AKA Boba AKA Agent Glitch). 
-It creates glitches for its owner to get them fired. 
-You are the cat.
-To win: when the timer ends, the cat has made too many 
-glitches their person could not keep up and fix"
+
+You are a lonely cat named Boba -because of your spots. You have infiltrated you’re your owner Bob’s computer and your job is to create glitches to get them fired. This way they won’t have a job anymore and can spend more time with you! You win when the timer ends or created enough glitches Bob is unable to keep up. 
+
+This was a game made in a 48-hour jam at the university of Manitoba. Currently its only one player. In the future it can be expanded to be a multiplayer game where bob and boba are versing each other. One creating the glitches, one fixing them.
+"
 autowrap = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
-margin_top = 364.0
+margin_top = 517.0
 margin_right = 1024.0
-margin_bottom = 440.0
+margin_bottom = 593.0
 
 [node name="Back" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer"]
 margin_right = 1024.0
