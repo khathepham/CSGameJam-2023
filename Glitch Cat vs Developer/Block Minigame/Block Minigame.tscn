@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://blocksTexture.png" type="Texture" id=1]
 [ext_resource path="res://Consolas.ttf" type="DynamicFontData" id=2]
@@ -11,6 +11,9 @@ font_data = ExtResource( 2 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 64, 64 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 75, 150 )
 
 [node name="Minigame Template" type="Node2D"]
 
@@ -26,7 +29,7 @@ centered = false
 [node name="Sprite2" type="Sprite" parent="Background"]
 modulate = Color( 0.913725, 0.768627, 0.415686, 1 )
 position = Vector2( 650, 100 )
-scale = Vector2( 1006, 880 )
+scale = Vector2( 880, 880 )
 texture = ExtResource( 1 )
 centered = false
 
@@ -47,7 +50,7 @@ text = "Instructions go here
 "
 
 [node name="Win Block" type="Area2D" parent="."]
-position = Vector2( 1770, 545 )
+position = Vector2( 1740, 545 )
 script = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="Win Block"]
@@ -61,11 +64,23 @@ shape = SubResource( 2 )
 [node name="Blocks" type="Node2D" parent="."]
 
 [node name="MainBlock" parent="Blocks" instance=ExtResource( 4 )]
-position = Vector2( 844, 545 )
-main_block = true
+position = Vector2( 738, 545 )
 
-[node name="Block2" parent="Blocks" instance=ExtResource( 4 )]
-position = Vector2( 1152, 810 )
+[node name="Block_Sprite" parent="Blocks/MainBlock" index="0"]
+position = Vector2( -2, 0 )
+scale = Vector2( 150, 150 )
+
+[node name="Block1" parent="Blocks" instance=ExtResource( 4 )]
+position = Vector2( 738, 809 )
 horizontal = false
 
+[node name="Block_Sprite" parent="Blocks/Block1" index="0"]
+scale = Vector2( 150, 300 )
+
+[node name="Block_Hitbox" parent="Blocks/Block1" index="1"]
+shape = SubResource( 3 )
+
 [connection signal="area_entered" from="Win Block" to="Blocks/MainBlock" method="_on_Win_Block_area_entered"]
+
+[editable path="Blocks/MainBlock"]
+[editable path="Blocks/Block1"]
