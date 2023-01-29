@@ -60,7 +60,11 @@ margin_bottom = 216.0
 custom_fonts/font = SubResource( 1 )
 text = "How to Play:
 
-Remove the red chip from the board by sliding the other pieces out of the way"
+Remove the red chip from the board by sliding the other pieces out of the way
+
+
+Controls:
+Use the mouse to drag the pieces"
 autowrap = true
 
 [node name="Sprite4" type="Sprite" parent="Background"]
