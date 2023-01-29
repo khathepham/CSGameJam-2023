@@ -1,0 +1,9 @@
+[gd_scene format=2]
+
+[node name="1st order by Boba" type="Label"]
+margin_left = 493.0
+margin_top = 97.0
+margin_right = 718.0
+margin_bottom = 130.0
+rect_scale = Vector2( 1.56, 1.52 )
+text = "Yo human, come here and pet me!"

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://cat-removebg-preview.png" type="Texture" id=1]
+
+[node name="Boba the cat" type="TextureRect"]
+margin_left = 807.0
+margin_top = 425.0
+margin_right = 941.0
+margin_bottom = 556.0
+texture = ExtResource( 1 )
