@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/CATBoba.png-8df256cbc9b25d4fcffdbc96febdae69.stex"
+path="res://.import/cat3.png-e268412e527fd21c50e6ea6deb83f258.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/CATBoba.png"
-dest_files=[ "res://.import/CATBoba.png-8df256cbc9b25d4fcffdbc96febdae69.stex" ]
+source_file="res://assets/cat3.png"
+dest_files=[ "res://.import/cat3.png-e268412e527fd21c50e6ea6deb83f258.stex" ]
 
 [params]
 
