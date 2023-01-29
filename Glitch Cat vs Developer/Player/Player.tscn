@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://Player.gd" type="Script" id=1]
+[ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://assets/Standing cat.png" type="Texture" id=2]
 [ext_resource path="res://assets/Sitting up.png" type="Texture" id=3]
 [ext_resource path="res://assets/Sitting left.png" type="Texture" id=4]
@@ -40,11 +40,11 @@ animations = [ {
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
-radius = 39.0
-height = 0.0
+radius = 17.0
+height = 60.0
 
 [node name="Player" type="Area2D"]
-position = Vector2( 40, 144 )
+scale = Vector2( 2, 2 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
@@ -52,6 +52,7 @@ __meta__ = {
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
+zoom = Vector2( 3, 3 )
 smoothing_enabled = true
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
@@ -61,6 +62,8 @@ animation = "idle"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 4, 54 )
+rotation = 1.5708
 shape = SubResource( 2 )
 
 [connection signal="body_entered" from="." to="." method="_on_Cat_body_entered"]
