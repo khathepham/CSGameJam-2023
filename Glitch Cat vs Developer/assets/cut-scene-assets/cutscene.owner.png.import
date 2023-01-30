@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/frayed node.png-770b685e31c34a49948e33f307ef3c9a.stex"
+path="res://.import/cutscene.owner.png-1df3036089ced9eaf09e75f435d82be7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/frayed node.png"
-dest_files=[ "res://.import/frayed node.png-770b685e31c34a49948e33f307ef3c9a.stex" ]
+source_file="res://assets/cut-scene-assets/cutscene.owner.png"
+dest_files=[ "res://.import/cutscene.owner.png-1df3036089ced9eaf09e75f435d82be7.stex" ]
 
 [params]
 

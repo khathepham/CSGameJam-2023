@@ -9,7 +9,6 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/box.png"
 source_file="res://BlockMinigame/icon.png"
 dest_files=[ "res://.import/icon.png-a61b1aff791259a6f7dd141640431eab.stex" ]
 

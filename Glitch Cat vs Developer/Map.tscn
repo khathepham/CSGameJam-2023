@@ -7,6 +7,8 @@
 [ext_resource path="res://BlockMinigame/Block Minigame2.tscn" type="PackedScene" id=5]
 [ext_resource path="res://CursorGameLevel1.tscn" type="PackedScene" id=6]
 [ext_resource path="res://CursorGameLevel2.tscn" type="PackedScene" id=7]
+[ext_resource path="res://MainMenu/MainMenuMusic.tscn" type="PackedScene" id=6]
+[ext_resource path="res://MainMenu/Glitched Out (Official).mp3" type="AudioStream" id=7]
 [ext_resource path="res://assets/tileset.temp.png" type="Texture" id=11]
 
 [sub_resource type="TileSet" id=1]
@@ -431,5 +433,9 @@ limit_bottom = 10240
 position = Vector2( 8672, -7520 )
 rotation = 3.14159
 scene = ExtResource( 7 )
+[node name="AudioStreamPlayer" parent="." instance=ExtResource( 6 )]
+stream = ExtResource( 7 )
+volume_db = -11.496
+autoplay = true
 
 [editable path="Player"]
