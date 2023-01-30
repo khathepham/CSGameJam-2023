@@ -1,4 +1,5 @@
 extends Area2D
+signal complete
 
 export var scene : PackedScene
 
