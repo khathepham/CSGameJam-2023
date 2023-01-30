@@ -23,4 +23,4 @@ func _on_tryAgainHoverZone_mouse_entered():
 func _on_greenZone2_mouse_entered():
 	yield(get_tree().create_timer(0.5), "timeout") #delays next scene
 	
-	get_tree().change_scene("res://Map.tscn")
+	get_tree().change_scene("res://WinScreen.tscn")

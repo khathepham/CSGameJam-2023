@@ -1,7 +1,6 @@
 extends Area2D
 
 export var scene : PackedScene
-signal complete
 
 var complete = false
 var interactable = false
@@ -15,6 +14,7 @@ func _ready():
 func _process(_delta):
 	print(interactable)
 	if interactable && Input.is_action_just_pressed("interact"):
+		complete = true
 		print("play")
 		get_tree().change_scene_to(scene)
 

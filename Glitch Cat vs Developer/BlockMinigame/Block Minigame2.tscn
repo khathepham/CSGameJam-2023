@@ -2,11 +2,9 @@
 
 [ext_resource path="res://BlockMinigame/blocksTexture.png" type="Texture" id=1]
 [ext_resource path="res://BlockMinigame/Consolas.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://Consolas.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://BlockMinigame/Win Block.gd" type="Script" id=3]
 [ext_resource path="res://BlockMinigame/Block.tscn" type="PackedScene" id=4]
 [ext_resource path="res://BlockMinigame/tileset.ground.png" type="Texture" id=5]
-[ext_resource path="res://BlockMinigame/Countdown.gd" type="Script" id=6]
-[ext_resource path="res://BlockMinigame/Win Block.gd" type="Script" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -190,6 +188,8 @@ scale = Vector2( 326, 150 )
 
 [node name="Block_Hitbox" parent="Level2/HorBlock5" index="1"]
 shape = SubResource( 4 )
+
+[connection signal="area_entered" from="Win Block" to="Win Block" method="_on_Win_Block_area_entered"]
 
 [editable path="Level2/MainBlock"]
 [editable path="Level2/VerBlock1"]

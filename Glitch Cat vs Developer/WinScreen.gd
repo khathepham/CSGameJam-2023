@@ -8,7 +8,8 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	yield(get_tree().create_timer(2), "timeout")
+	$AudioStreamPlayer2D.playing = true
+	yield(get_tree().create_timer(3), "timeout")
 	get_tree().change_scene("res://Map.tscn")
 
 

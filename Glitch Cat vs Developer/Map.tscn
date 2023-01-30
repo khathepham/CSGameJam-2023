@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/tileset.png" type="Texture" id=2]
@@ -7,8 +7,9 @@
 [ext_resource path="res://BlockMinigame/Block Minigame2.tscn" type="PackedScene" id=5]
 [ext_resource path="res://CursorGameLevel1.tscn" type="PackedScene" id=6]
 [ext_resource path="res://CursorGameLevel2.tscn" type="PackedScene" id=7]
-[ext_resource path="res://MainMenu/MainMenuMusic.tscn" type="PackedScene" id=6]
-[ext_resource path="res://MainMenu/Glitched Out (Official).mp3" type="AudioStream" id=7]
+[ext_resource path="res://MainMenu/MainMenuMusic.tscn" type="PackedScene" id=8]
+[ext_resource path="res://MainMenu/Glitched Out (Official).mp3" type="AudioStream" id=9]
+[ext_resource path="res://Map.gd" type="Script" id=10]
 [ext_resource path="res://assets/tileset.temp.png" type="Texture" id=11]
 
 [sub_resource type="TileSet" id=1]
@@ -390,6 +391,7 @@ points = PoolVector2Array( 128, 640, 0, 640, 0, 0, 128, 0 )
 10/z_index = 0
 
 [node name="Map" type="Node2D"]
+script = ExtResource( 10 )
 
 [node name="FloorTileMap" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
@@ -413,13 +415,13 @@ position = Vector2( 3767, 3989 )
 rotation = 3.14159
 scene = ExtResource( 4 )
 
-[node name="Minigame" parent="." instance=ExtResource( 3 )]
+[node name="CursorGame2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 9751, 5817 )
 rotation = 1.5708
 scene = ExtResource( 6 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 7.62939e-06, 7.62939e-06 )
+position = Vector2( 3752, 3256 )
 collision_layer = 3
 collision_mask = 3
 
@@ -429,12 +431,13 @@ limit_top = -10240
 limit_right = 10240
 limit_bottom = 10240
 
-[node name="Minigame2" parent="." instance=ExtResource( 3 )]
+[node name="CursorGame1" parent="." instance=ExtResource( 3 )]
 position = Vector2( 8672, -7520 )
 rotation = 3.14159
 scene = ExtResource( 7 )
-[node name="AudioStreamPlayer" parent="." instance=ExtResource( 6 )]
-stream = ExtResource( 7 )
+
+[node name="AudioStreamPlayer" parent="." instance=ExtResource( 8 )]
+stream = ExtResource( 9 )
 volume_db = -11.496
 autoplay = true
 
