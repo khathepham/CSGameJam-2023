@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-a61b1aff791259a6f7dd141640431eab.stex"
+path="res://.import/Standing.png-438fd98344b4145adc0d711d6965e90c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://BlockMinigame/icon.png"
-dest_files=[ "res://.import/icon.png-a61b1aff791259a6f7dd141640431eab.stex" ]
+source_file="res://Assets/Standing.png"
+dest_files=[ "res://.import/Standing.png-438fd98344b4145adc0d711d6965e90c.stex" ]
 
 [params]
 
